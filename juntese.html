@@ -14,7 +14,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <header>
       <!-- Início da barra de navegação -->
@@ -42,7 +44,82 @@
       <!-- Fim da barra de navegação -->
     </header>
 
-    <main></main>
+    <main>
+      <h2 id="texto1">
+        Preencha o formulário e junte-se a maior equipe de Proclubs
+      </h2>
+      <!-- inicio do formulario -->
+
+      <div class="row">
+        <!-- inicio do formulário -->
+        <form class="col s12">
+          <!-- Primeira linha do formulário -->
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="IDPSN" type="text" class="validate" />
+              <label for="IDPSN">Id da PSN</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="email" class="validate" />
+              <label for="email">E-mail</label>
+            </div>
+            <!-- Fim da primeira linha do formulário -->
+          </div>
+          <hr />
+
+          <!-- Segunda linha do formulário -->
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">local_phone</i>
+              <input id="telefone" type="tel" class="validate" />
+              <label for="telefone">Telefone</label>
+            </div>
+
+            <div class="input-field col s6">
+              <i class="material-icons prefix">dock</i>
+              <input id="over" type="text" class="validate" />
+              <label for="over">Seu Overall</label>
+            </div>
+
+            <!-- Fim da Segunda linha do formulário -->
+          </div>
+
+          <hr />
+
+          <!-- Terceira linha do formulário -->
+          <div class="row">
+            <div class="input-field col s12">
+              <select class="icons">
+                <option value="" disabled selected
+                  >Escolha sua plataforma</option
+                >
+                <option value="">Playstation 4</option>
+                <option value="">Pc</option>
+                <option value="">Xbox One</option>
+              </select>
+              <label>Selecione sua plataforma</label>
+            </div>
+
+            <!-- Fim da Terceira linha do formulário -->
+          </div>
+
+          <button
+            class="btn waves-effect waves-light"
+            type="submit"
+            name="action"
+          >
+            Confirmar sua Solicitação
+            <i class="material-icons right">check</i>
+          </button>
+
+          <!-- Fim do formulário -->
+        </form>
+      </div>
+
+      <!-- fim do formulario -->
+    </main>
     <!-- Início do Footer -->
 
     <footer class="page-footer red darken-3">
@@ -90,6 +167,19 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".datepicker").datepicker();
+      });
+
+      $(document).ready(function () {
+        $("select").formSelect();
+      });
+
       $(document).ready(function () {
         $(".sidenav").sidenav();
       });
