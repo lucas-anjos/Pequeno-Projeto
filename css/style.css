@@ -10,7 +10,7 @@
 
 #texto {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: apple;
 
   font-size: 15pt;
 }
@@ -42,4 +42,20 @@
 }
 #apresentacao h2 {
   font-family: apple;
+}
+#forms {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  font-family: apple;
+}
+#nav {
+  font-family: apple;
+}
+#tabela {
+  text-align: center;
+  font-family: apple;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 30px;
 }
