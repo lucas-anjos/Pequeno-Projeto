@@ -20,100 +20,83 @@
   <body>
     <header>
       <!-- Início da barra de navegação -->
-      <nav>
-        <div class="nav-wrapper red darken-3">
-          <a href="layout.html" class="brand-logo">Atlanta United</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-            ><i class="material-icons">menu</i></a
-          >
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="elenco.html">Elenco</a></li>
-            <li><a href="titulos.html">Títulos</a></li>
-            <li><a href="juntese.html">Junte-se</a></li>
-          </ul>
 
-          <ul class="sidenav" id="mobile-demo">
-            <li><a href="elenco.html">Elenco</a></li>
-            <li><a href="titulos.html">Títulos</a></li>
-            <li><a href="juntese.html">Junte-se</a></li>
-          </ul>
-        </div>
-      </nav>
       <!-- Fim da barra de navegação -->
     </header>
 
     <main>
-      <h2 id="texto1">
-        Preencha o formulário e junte-se a maior equipe de Proclubs
-      </h2>
-      <!-- inicio do formulario -->
+      <div id="forms">
+        <h2>
+          Preencha o formulário e junte-se a nós.
+        </h2>
+        <img src="img/atlanta3.png" alt="" />
+        <hr />
+        <!-- inicio do formulario -->
 
-      <div class="row">
-        <!-- inicio do formulário -->
-        <form class="col s12">
-          <!-- Primeira linha do formulário -->
-          <div class="row">
-            <div class="input-field col s6">
-              <i class="material-icons prefix">account_circle</i>
-              <input id="IDPSN" type="text" class="validate" />
-              <label for="IDPSN">Id da PSN</label>
-            </div>
-            <div class="input-field col s6">
-              <i class="material-icons prefix">email</i>
-              <input id="email" type="email" class="validate" />
-              <label for="email">E-mail</label>
-            </div>
-            <!-- Fim da primeira linha do formulário -->
-          </div>
-          <hr />
-
-          <!-- Segunda linha do formulário -->
-          <div class="row">
-            <div class="input-field col s6">
-              <i class="material-icons prefix">local_phone</i>
-              <input id="telefone" type="tel" class="validate" />
-              <label for="telefone">Telefone</label>
+        <div class="row">
+          <!-- inicio do formulário -->
+          <form class="col s12">
+            <!-- Primeira linha do formulário -->
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="IDPSN" type="text" class="validate" />
+                <label for="IDPSN">Id da PSN</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">email</i>
+                <input id="email" type="email" class="validate" />
+                <label for="email">E-mail</label>
+              </div>
+              <!-- Fim da primeira linha do formulário -->
             </div>
 
-            <div class="input-field col s6">
-              <i class="material-icons prefix">dock</i>
-              <input id="over" type="text" class="validate" />
-              <label for="over">Seu Overall</label>
+            <!-- Segunda linha do formulário -->
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">local_phone</i>
+                <input id="telefone" type="tel" class="validate" />
+                <label for="telefone">Telefone</label>
+              </div>
+
+              <div class="input-field col s6">
+                <i class="material-icons prefix">dock</i>
+                <input id="over" type="text" class="validate" />
+                <label for="over">Seu Overall</label>
+              </div>
+
+              <!-- Fim da Segunda linha do formulário -->
             </div>
 
-            <!-- Fim da Segunda linha do formulário -->
-          </div>
+            <!-- Terceira linha do formulário -->
+            <div class="row">
+              <div class="input-field col s12">
+                <select class="icons">
+                  <option value="" disabled selected
+                    >Escolha sua plataforma</option
+                  >
+                  <option value="">Playstation 4</option>
+                  <option value="">Pc</option>
+                  <option value="">Xbox One</option>
+                </select>
+                <label>Selecione sua plataforma</label>
+              </div>
 
-          <hr />
-
-          <!-- Terceira linha do formulário -->
-          <div class="row">
-            <div class="input-field col s12">
-              <select class="icons">
-                <option value="" disabled selected
-                  >Escolha sua plataforma</option
-                >
-                <option value="">Playstation 4</option>
-                <option value="">Pc</option>
-                <option value="">Xbox One</option>
-              </select>
-              <label>Selecione sua plataforma</label>
+              <!-- Fim da Terceira linha do formulário -->
             </div>
 
-            <!-- Fim da Terceira linha do formulário -->
-          </div>
+            <button
+              class="btn waves-effect waves-light"
+              type="submit"
+              name="action"
+            >
+              Confirmar sua Solicitação
+              <i class="material-icons right">check</i>
+            </button>
 
-          <button
-            class="btn waves-effect waves-light"
-            type="submit"
-            name="action"
-          >
-            Confirmar sua Solicitação
-            <i class="material-icons right">check</i>
-          </button>
-
-          <!-- Fim do formulário -->
-        </form>
+            <!-- Fim do formulário -->
+          </form>
+        </div>
       </div>
 
       <!-- fim do formulario -->
